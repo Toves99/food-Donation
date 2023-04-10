@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#f28500</color>
+    <color name="purple_500">#03719e</color>
+    <color name="purple_700">#03719e</color>
+    <color name="teal_200">#03719e</color>
+    <color name="teal_700">#03719e</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btnclr">#f28500</color>
+    <color name="btnBackground">#f28500</color>
+    <color name="headingBackground">#bac4ca</color>
+
+    <color name="darkBlue">#03719e</color>
+    <color name="orange">#f28500</color>
+    <color name="gray">#bac4ca</color>
+
+
+    //IT20633622
+    <color name="LoginHintColor">#fbf8f8</color>
+
+    //IT20609030
+    <color name="FoodStatusColor">#b70f0a</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="transparent">#ffffff00</color>
+    <color name="night_blue">#151B54</color>
+    <color name="red">#FF0000</color>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyApp</string>
+
+    <string name="btnfindfood">find food</string>
+    <string name="btndonate">donations</string>
+    <string name="btnlogin">login</string>
+    <string name="btnrateus">rate us</string>
+    <string name="btnvacancies">vacancies</string>
+    <string name="btnhowto">how to use</string>
+</resources>

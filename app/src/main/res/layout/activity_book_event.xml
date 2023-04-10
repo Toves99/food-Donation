@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/btnclr"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".BookEvent">
+
+
+    <TextView
+        android:id="@+id/bookEvent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Book Event"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookEvent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/etEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:hint="Enter Event's Name "
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            android:padding="17dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <EditText
+            android:id="@+id/etEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Select Date and Time"
+            android:inputType="textPersonName"
+            android:padding="17dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEventName"
+            app:layout_constraintVertical_bias="0.063"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/etEventPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="left"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Enter the event place"
+            android:inputType="textPersonName"
+            android:padding="17dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEventDate"
+            app:layout_constraintVertical_bias="0.082"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/etNumberPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="left"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Number of attendants"
+            android:inputType="number"
+            android:padding="17dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEventPlace"
+            app:layout_constraintVertical_bias="0.128"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Save Event"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNumberPeople"
+            app:layout_constraintVertical_bias="0.189" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:backgroundTint="@color/teal_700"
+            android:drawableRight="@drawable/baseline_arrow_circle_right_24"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save"
+            app:layout_constraintVertical_bias="0.241" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

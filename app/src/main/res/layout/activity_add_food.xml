@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".AddFood">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvDonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="Make Donation Here"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                />
+
+            <EditText
+                android:id="@+id/etDonorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDonate"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Enter Donor Name "
+                android:inputType="textPersonName"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/etDonorLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDonorName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Enter Donor Location "
+                android:inputType="textPersonName"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/etFoodTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDonorLocation"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Enter Food Title "
+                android:inputType="textPersonName"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFoodTitle"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:text="Category:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                />
+
+            <EditText
+                android:id="@+id/etFoodCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCat"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Prepared Food / Dry Food "
+                android:inputType="textPersonName"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/etFoodQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFoodCategory"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Enter Food Quantity "
+                android:inputType="number"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/etExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFoodQuantity"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:backgroundTint="@color/black"
+                android:hint="Enter Expiry Date "
+                android:inputType="textPersonName"
+                android:padding="17dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/btnSubmitDonation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/etExpiryDate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/btnclr"
+                android:padding="15dp"
+                android:text="Submit Donatin" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
